@@ -2,7 +2,9 @@
 A mixed online coding platform.
 
 # structure
-    vcode-admin    管理模块
-    vcode-judger   判题模块
-    vcode-server   后端模块
-    vcode-web      前端模块
+    vcode-admin         后台管理服务
+    vcode-judger        本地判题服务
+    vcode-judger-remote 远程判题服务
+    vcode-server        后端服务
+    vcode-spider        远程题目爬虫服务
+    vcode-web           前端SPA
