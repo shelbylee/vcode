@@ -10,5 +10,5 @@
         <version>0.1.0</version>
     </parent>
 
-    <artifactId>vcode-judger-remote</artifactId>
+    <artifactId>vcode-remote-judger</artifactId>
 </project>

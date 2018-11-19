@@ -13,7 +13,7 @@
         <module>vcode-server</module>
         <module>vcode-web</module>
         <module>vcode-judger</module>
-        <module>vcode-judger-remote</module>
+        <module>vcode-remote-judger</module>
         <module>vcode-spider</module>
         <module>vcode-admin</module>
     </modules>
