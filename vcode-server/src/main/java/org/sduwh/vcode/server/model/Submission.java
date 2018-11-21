@@ -1,4 +1,4 @@
-package org.sduwh.vcode.server.model.submission;
+package org.sduwh.vcode.server.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

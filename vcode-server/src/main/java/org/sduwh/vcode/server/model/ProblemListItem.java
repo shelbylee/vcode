@@ -1,4 +1,4 @@
-package org.sduwh.vcode.server.model.problem;
+package org.sduwh.vcode.server.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -12,6 +12,6 @@ import java.sql.Timestamp;
 public class ProblemListItem {
     private Long id;
     private String title;
-    private Timestamp createdAt;
-    private Timestamp updatedAt;
+//    private Timestamp createdAt;
+//    private Timestamp updatedAt;
 }

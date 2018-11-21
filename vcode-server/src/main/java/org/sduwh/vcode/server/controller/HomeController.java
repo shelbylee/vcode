@@ -6,15 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/problem")
-public class ProblemController {
+@RequestMapping("/")
+public class HomeController {
     @GetMapping
-    public String list(Model model) {
-        return "problem-list";
-    }
-
-    @GetMapping("/{id}")
-    public String detail(Model model) {
-        return "problem";
+    public String home(Model model) {
+        model.addAttribute("name", "x");
+        return "home";
     }
 }
