@@ -3,17 +3,15 @@ package org.sduwh.vcode.server.model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-
-import java.sql.Timestamp;
+import org.springframework.data.annotation.Id;
 
 @Data
 @ToString
 @EqualsAndHashCode
 public class Problem {
-    private Long id;
-    private Long userId;
+    @Id
+    private String id;
+    private String userId;
     private String title;
     private String content;
-    private Timestamp createdAt;
-    private Timestamp updatedAt;
 }
