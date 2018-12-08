@@ -22,7 +22,7 @@ public class Response {
         return response;
     }
 
-    public static Response failed(String error) {
+    public static Response error(String error) {
         Response response = new Response();
         response.success = false;
         response.data = error;
