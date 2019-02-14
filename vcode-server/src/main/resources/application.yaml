@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: vcode-server
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
