@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package vcode.server;
+
+option java_package = "org.sduwh.vcode.server.proto";
+option java_outer_classname = "ProblemProto";
+option java_multiple_files = true;
+
+service ProblemService {
+    rpc ListProblem (ListProblemRequest) returns (ListProblemResponse);
+    rpc FindProblem (FindProblemRequest) returns (FindProblemResponse);
+}
+
+message ListProblemRequest {
+    string message = 1;
+}
+
+message ListProblemResponse {
+    string message = 1;
+}
+
+message FindProblemRequest {
+    string message = 1;
+}
+
+message FindProblemResponse {
+    string message = 1;
+}

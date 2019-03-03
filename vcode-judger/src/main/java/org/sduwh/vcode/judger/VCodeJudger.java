@@ -1,11 +1,19 @@
 package org.sduwh.vcode.judger;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.sduwh.vcode.channel.Channel;
+import org.sduwh.vcode.channel.JudgeRedisChannel;
+import org.sduwh.vcode.channel.JudgeTask;
 
-@SpringBootApplication
 public class VCodeJudger {
+    private Channel<JudgeTask> channel = new JudgeRedisChannel();
+    private Thread worker = new Thread(() -> {
+        while (true) {
+            JudgeTask task = channel.consume();
+            System.out.println(task);
+        }
+    }, "vcode-judger-worker");
+
     public static void main(String[] args) {
-        SpringApplication.run(VCodeJudger.class);
+        new VCodeJudger().worker.start();
     }
 }
